@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Admin Login Form</title>
+{% endblock %}
+
+{% block body %}
+
+    <div class="bgimg1">
+        <form class="form_container" method="post" action="/admin">
+            <h1>Admin Login</h1>
+            <input type="text" placeholder="Enter ID" id="ID" name="ID">
+            <br>
+            <input type="password" placeholder="Enter Password" id="pass" name="pass">
+            <br><br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Display reservations</title>
+{% endblock %}
+
+{% block body %}
+<div class="wall">
+<table style="font-size:120%">
+    <thead>
+        <tr>
+            <th>Reservation ID</th>
+            <th>Room ID</th>
+            <th>Customer ID</th>
+            <th>Data Added</th>
+        </tr>
+    </thead>
+<tbody>
+     {% for row in data %}
+        <tr>
+            <td>{{row.reservation_ID}}</td>
+            <td>{{row.room_ID}}</td>
+            <td>{{row.cust_ID}}</td>
+            <td>{{row.Data_Added}}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

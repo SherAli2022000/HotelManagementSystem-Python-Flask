@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Resident Login Form</title>
+{% endblock %}
+
+{% block body %}
+    <div class="bgimg1">
+        <form class="form_container" method="post" action="/resident">
+            <h1>Resident Login</h1>
+            <input type="number" placeholder="Enter ID" id="ID" name="ID">
+            <br>
+            <input type="password" placeholder="Enter Password" id="pass" name="pass">
+            <br><br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

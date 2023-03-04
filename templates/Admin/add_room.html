@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Add Room</title>
+{% endblock %}
+
+{% block body %}
+<div class="roombackground">
+        <form class="form_container" method="post" action="/checkNewRoom">
+            <h1>Enter new room details</h1>
+            <input type="number" placeholder="Enter room ID" id="room_ID" name="room_ID">
+            <br>
+            <input type="text" placeholder="Enter room type" id="room_type" name="room_type">
+            <br>
+            <input type="number" placeholder="Enter room rent" id="room_price" name="room_price">
+            <br>
+            <input type="text" placeholder="Enter room description" id="room_description" name="room_description">
+            <br>
+            <input type="number" placeholder="Enter room floor" id="room_floor" name="room_floor">
+            <br>
+            <input type="text" placeholder="Enter room wing" id="room_wing" name="room_wing">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+</div>
+{% endblock %}

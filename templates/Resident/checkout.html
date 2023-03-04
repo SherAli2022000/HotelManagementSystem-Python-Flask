@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Check out</title>
+{% endblock %}
+
+{% block body %}
+    <div class="CustomerBackground2">
+        <form class="form_container" method="post" action="/checkAndCheckOut">
+            <h1>Enter confirmation</h1>
+            <h1>total is {{data}}</h1>
+            <input type="text" placeholder="Enter Yes or No" id="conf" name="conf">
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Display available rooms</title>
+{% endblock %}
+
+{% block body %}
+<div class="wall">
+<table style="font-size:120%">
+  <thead>
+    <tr>
+        <th>Room_ID</th>
+        <th>Type</th>
+        <th>Rent</th>
+        <th>Floor</th>
+        <th>Wing</th>
+        <th>Status</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+        {% if row.status=='False'%}
+          <tr>
+                <td>{{row.room_id}}</td>
+                <td>{{row.room_type}}</td>
+                <td>{{row.room_price}}</td>
+                <td>{{row.room_floor}}</td>
+                <td>{{row.room_wing}}</td>
+                <td>{{row.status}}</td>
+                <td>{{row.room_description}}</td>
+            </tr>
+        {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

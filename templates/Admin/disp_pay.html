@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Add Room</title>
+{% endblock %}
+
+{% block body %}
+<div class="wall">
+<table style="font-size:120%">
+    <thead>
+        <tr>
+            <th>Payment ID</th>
+            <th>Customer ID</th>
+            <th>Customer name</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+<tbody>
+     {% for row in data %}
+        <tr>
+            <td>{{row.payment_id}}</td>
+            <td>{{row.cust_id}}</td>
+            <td>{{row.cust_name}}</td>
+            <td>{{row.total}}</td>
+            <td>{{row.status}}</td>
+            <td>{{row.desc}}</td>
+        </tr>
+     {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

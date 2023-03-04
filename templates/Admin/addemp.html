@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Add Employee</title>
+{% endblock %}
+
+{% block body %}
+    <div class="ChangeEmpbackground">
+        <form class="form_container" method="post" action="/checkNewEmployee">
+            <h1>Enter new employee details</h1>
+            <input type="number" placeholder="Enter ID" id="emp_id" name="emp_id">
+            <br>
+            <input type="text" placeholder="Enter name" id="emp_name" name="emp_name">
+            <br>
+            <input type="text" placeholder="Enter address" id="emp_add" name="emp_add">
+            <br>
+            <input type="text" placeholder="Enter phone" id="emp_phone" name="emp_phone">
+            <br>
+            <input type="number" placeholder="Enter salary" id="emp_sal" name="emp_sal">
+            <br>
+            <input type="text" placeholder="Enter job type" id="emp_job" name="emp_job">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

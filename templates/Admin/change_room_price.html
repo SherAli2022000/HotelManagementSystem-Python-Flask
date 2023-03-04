@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+ <div class="roombackground">
+        <form class="form_container" method="post" action="/checkAndChangeRoomPrice">
+            <h1>Enter details to change room price</h1>
+            <input type="number" placeholder="Enter ID" id="room_id" name="room_id">
+            <br>
+            <input type="number" placeholder="Enter new room price " id="room_price" name="room_price">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+ </div>
+{% endblock %}

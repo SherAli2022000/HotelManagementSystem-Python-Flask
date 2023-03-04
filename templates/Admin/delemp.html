@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+ <div class="ChangeEmpbackground">
+        <form class="form_container" method="post" action="/checkAndDeleteEmp">
+            <h1>Enter ID of employee to delete</h1>
+            <input type="number" placeholder="Enter employee ID" id="emp_id" name="emp_id">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+ </div>
+{% endblock %}

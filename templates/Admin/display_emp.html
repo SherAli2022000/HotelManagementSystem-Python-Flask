@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>All employees</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="wall">
+<table style="font-size:120%">
+  <thead>
+    <tr>
+        <th>Emp_ID</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone Number</th>
+        <th>Salary</th>
+        <th>Job Type</th>
+    </tr>
+    </thead>
+    <tbody>
+     {% for row in data %}
+            <tr>
+                <td>{{row.emp_id}}</td>
+                <td>{{row.emp_name}}</td>
+                <td>{{row.emp_address}}</td>
+                <td>{{row.emp_phone}}</td>
+                <td>{{row.emp_salary}}</td>
+                <td>{{row.emp_jobtype}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

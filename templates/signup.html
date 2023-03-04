@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>SignUP Form</title>
+{% endblock %}
+
+{% block body %}
+    <div class="bgimg1">
+        <form class="form_container" method="post" action="/signupSuccess">
+            <h1>Resident Sign up</h1>
+            <input type="number" placeholder="Enter ID" id="ID" name="ID">
+            <br>
+            <input type="text" placeholder="Enter Your name" id="custName" name="custName">
+            <br><br>
+            <input type="number" placeholder="Enter Your Age" id="age" name="age">
+            <br><br>
+            <input type="text" placeholder="Enter Your Address" id="address" name="address">
+            <br><br>
+            <input type="text" placeholder="Enter Your Phone number" id="phone" name="phone">
+            <br><br>
+            <input type="password" placeholder="Enter Your password" id="password" name="password">
+            <br><br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

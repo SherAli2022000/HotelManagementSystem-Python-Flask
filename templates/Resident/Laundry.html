@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Avail Services</title>
+{% endblock %}
+
+{% block body %}
+    <div class="bgimg1">
+        <form class="form_container" method="post" action="/OrderLaundry">
+            <h1>Enter number of clothes</h1>  <br>
+
+            <input type="number" placeholder="Choice" id="service_choice" name="service_choice">
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

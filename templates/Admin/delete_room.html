@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+ <div class="roombackground">
+        <form class="form_container" method="post" action="/checkAndDeleteRoom">
+            <h1>Enter room ID to delete room </h1>
+            <input type="number" placeholder="Enter room ID" id="room_id" name="room_id">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+ </div>
+{% endblock %}

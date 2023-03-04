@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Book Room</title>
+{% endblock %}
+
+{% block body %}
+    <div class="CustomerBackground1">
+        <form class="form_container" method="post" action="/checkAndBookRoom">
+            <h1>Enter Id of room to book</h1>
+            <input type="number" placeholder="Room ID" id="room_id" name="room_id">
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+    </div>
+{% endblock %}

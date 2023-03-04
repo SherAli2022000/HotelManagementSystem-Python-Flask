@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Customer details</title>
+{% endblock %}
+
+{% block body %}
+<div class="wall">
+<table style="font-size:120%">
+    <thead>
+        <tr>
+            <th>customer_id</th>
+            <th>password</th>
+            <th>name</th>
+            <th>age</th>
+            <th>address</th>
+            <th>phone_no</th>
+            <th>room_id</th>
+        </tr>
+    </thead>
+<tbody>
+        <tr>
+            <td>{{data.customer_id}}</td>
+            <td>{{data.password}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.address}}</td>
+            <td>{{data.phone_no}}</td>
+            <td>{{data.room_id}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+{% endblock %}

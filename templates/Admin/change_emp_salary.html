@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+ <div class="ChangeEmpbackground">
+        <form class="form_container" method="post" action="/checkAndChangeEmpSal">
+            <h1>Enter Details</h1>
+            <input type="number" placeholder="Enter ID" id="emp_id" name="emp_id">
+            <br>
+            <input type="number" placeholder="Enter new salary " id="emp_salary" name="emp_salary">
+            <br>
+            <button type="submit" class="btn2">Submit</button>
+        </form>
+ </div>
+{% endblock %}
